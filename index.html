@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPELZ 2K26 | B.E Mechanical Engineering Symposium</title>
+    <meta name="description" content="IMPELZ 2K26 - A premier mechanical engineering symposium hosted by the Department of Mechanical Engineering on 01.04.2026. Technical & Non-Technical events, Paper Presentation, CAD Modeling, Quiz & more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;900&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- PARTICLE CANVAS -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-icon">⚔</span>
+            <span class="brand-text">IMPELZ 2K26</span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#technical">Technical</a></li>
+            <li><a href="#nontechnical">Non-Technical</a></li>
+            <li><a href="#committee">Committee</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScjPw0H1zpxSHBhRExMduIsFjxQ7-mfbpW-FWqA4HooXceq6Q/viewform?usp=dialog" target="_blank" class="nav-register">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-gear hero-gear-1">⚔</div>
+        <div class="hero-gear hero-gear-2">🛡</div>
+        <div class="hero-gear hero-gear-3">⚔</div>
+        <div class="hero-dragon hero-dragon-left"></div>
+        <div class="hero-dragon hero-dragon-right"></div>
+        <div class="hero-content">
+            <div class="hero-badge">⚔ DEPARTMENT OF MECHANICAL ENGINEERING ⚔</div>
+            <h1 class="hero-title">
+                <span class="title-line">IMPELZ</span>
+                <span class="title-year">2K26</span>
+            </h1>
+            <div class="hero-date">
+                <span class="date-icon">🗡</span>
+                <span class="date-text">01 . 04 . 2026</span>
+            </div>
+            <p class="hero-subtitle">B.E MECHANICAL</p>
+            <p class="hero-tagline">"When you play the game of engineering, you win or you learn."</p>
+            <p class="hero-desc">A premier platform where aspiring engineers bridge the gap between concept and creation, showcasing the hardware and systems that will drive tomorrow's world.</p>
+            <div class="hero-cta">
+                <a href="#technical" class="btn btn-primary btn-fire">⚔ Enter the Arena</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScjPw0H1zpxSHBhRExMduIsFjxQ7-mfbpW-FWqA4HooXceq6Q/viewform?usp=dialog" target="_blank" class="btn btn-register btn-dragon">🐉 Register Now</a>
+                <a href="#about" class="btn btn-secondary btn-ice">🛡 Learn More</a>
+            </div>
+            <div class="hero-countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-bolt section-bolt-left">⚔</div>
+                <h2 class="section-title">ABOUT THE SYMPOSIUM</h2>
+                <div class="section-bolt section-bolt-right">⚔</div>
+            </div>
+            <div class="open-all-banner">
+                <span class="banner-sword">⚔</span>
+                <span class="banner-text">🏰 OPEN TO ALL DEPARTMENTS 🏰</span>
+                <span class="banner-sword">⚔</span>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-icon">🏛️</div>
+                    <h3>Precision & Motion</h3>
+                    <p>Hosted by the Department of Mechanical Engineering, this symposium celebrates precision, motion, and the future of sustainable design.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🔧</div>
+                    <h3>Bridge the Gap</h3>
+                    <p>A premier platform where aspiring engineers bridge the gap between concept and creation, showcasing the hardware and systems that will drive tomorrow's world.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🏆</div>
+                    <h3>Compete & Win</h3>
+                    <p>Participate in thrilling technical and non-technical events, showcase your skills, and win exciting prizes!</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🌐</div>
+                    <h3>Open to All Realms</h3>
+                    <p>Warriors from every department are welcome to enter the arena. No matter your house or discipline — this battle is for all!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNICAL EVENTS SECTION -->
+    <section class="section events-section" id="technical">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-bolt section-bolt-left">⚔</div>
+                <h2 class="section-title">TECHNICAL EVENTS</h2>
+                <div class="section-bolt section-bolt-right">⚔</div>
+            </div>
+            <p class="section-subtitle">"The forge remembers what the hammer commands."</p>
+            <div class="events-grid">
+                <!-- Paper Presentation -->
+                <div class="event-card" onclick="openModal('paperModal')" id="event-paper">
+                    <div class="event-card-inner">
+                        <div class="event-image-wrapper">
+                            <img src="images/paper_presentation.png" alt="Paper Presentation - Dracarys" class="event-image" loading="lazy">
+                            <div class="event-image-overlay">
+                                <span class="event-click-hint">🔍 Click to View Details</span>
+                            </div>
+                        </div>
+                        <div class="event-card-content">
+                            <h3 class="event-name">DRACARYS</h3>
+                            <p class="event-tagline">Paper Presentation</p>
+                        </div>
+                        <div class="event-card-rivet event-card-rivet-tl"></div>
+                        <div class="event-card-rivet event-card-rivet-tr"></div>
+                        <div class="event-card-rivet event-card-rivet-bl"></div>
+                        <div class="event-card-rivet event-card-rivet-br"></div>
+                    </div>
+                </div>
+
+                <!-- CAD Modeling -->
+                <div class="event-card" onclick="openModal('cadModal')" id="event-cad">
+                    <div class="event-card-inner">
+                        <div class="event-image-wrapper">
+                            <img src="images/cad_modeling.png" alt="CAD Modeling - Valyrian Draft" class="event-image" loading="lazy">
+                            <div class="event-image-overlay">
+                                <span class="event-click-hint">🔍 Click to View Details</span>
+                            </div>
+                        </div>
+                        <div class="event-card-content">
+                            <h3 class="event-name">VALYRIAN DRAFT</h3>
+                            <p class="event-tagline">CAD Modeling</p>
+                        </div>
+                        <div class="event-card-rivet event-card-rivet-tl"></div>
+                        <div class="event-card-rivet event-card-rivet-tr"></div>
+                        <div class="event-card-rivet event-card-rivet-bl"></div>
+                        <div class="event-card-rivet event-card-rivet-br"></div>
+                    </div>
+                </div>
+
+                <!-- Technical Quiz -->
+                <div class="event-card" onclick="openModal('quizModal')" id="event-quiz">
+                    <div class="event-card-inner">
+                        <div class="event-image-wrapper">
+                            <img src="images/technical_quiz.png" alt="Technical Quiz - Secrets of the Citadel" class="event-image" loading="lazy">
+                            <div class="event-image-overlay">
+                                <span class="event-click-hint">🔍 Click to View Details</span>
+                            </div>
+                        </div>
+                        <div class="event-card-content">
+                            <h3 class="event-name">SECRETS OF THE CITADEL</h3>
+                            <p class="event-tagline">Technical Quiz</p>
+                        </div>
+                        <div class="event-card-rivet event-card-rivet-tl"></div>
+                        <div class="event-card-rivet event-card-rivet-tr"></div>
+                        <div class="event-card-rivet event-card-rivet-bl"></div>
+                        <div class="event-card-rivet event-card-rivet-br"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NON-TECHNICAL EVENTS SECTION -->
+    <section class="section events-section nontechnical-section" id="nontechnical">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-bolt section-bolt-left">🐉</div>
+                <h2 class="section-title">NON-TECHNICAL EVENTS</h2>
+                <div class="section-bolt section-bolt-right">🐉</div>
+            </div>
+            <p class="section-subtitle">"Where fun meets fire. No textbooks required — only courage."</p>
+            <div class="events-grid">
+                <!-- Sell the Seven Kingdoms -->
+                <div class="event-card" onclick="openModal('sellModal')" id="event-sell">
+                    <div class="event-card-inner">
+                        <div class="event-image-wrapper">
+                            <img src="images/sell_seven_kingdoms.png" alt="Sell the Seven Kingdoms" class="event-image" loading="lazy">
+                            <div class="event-image-overlay">
+                                <span class="event-click-hint">🔍 Click to View Details</span>
+                            </div>
+                        </div>
+                        <div class="event-card-content">
+                            <h3 class="event-name">SELL THE SEVEN KINGDOMS</h3>
+                            <p class="event-tagline">The Ultimate Sales Pitch</p>
+                        </div>
+                        <div class="event-card-rivet event-card-rivet-tl"></div>
+                        <div class="event-card-rivet event-card-rivet-tr"></div>
+                        <div class="event-card-rivet event-card-rivet-bl"></div>
+                        <div class="event-card-rivet event-card-rivet-br"></div>
+                    </div>
+                </div>
+
+                <!-- Song of Ice and Fire -->
+                <div class="event-card" onclick="openModal('songModal')" id="event-song">
+                    <div class="event-card-inner">
+                        <div class="event-image-wrapper">
+                            <img src="images/song_ice_fire.png" alt="The Song of Ice and Fire" class="event-image" loading="lazy">
+                            <div class="event-image-overlay">
+                                <span class="event-click-hint">🔍 Click to View Details</span>
+                            </div>
+                        </div>
+                        <div class="event-card-content">
+                            <h3 class="event-name">THE SONG OF ICE AND FIRE</h3>
+                            <p class="event-tagline">Team Entertainment Challenge</p>
+                        </div>
+                        <div class="event-card-rivet event-card-rivet-tl"></div>
+                        <div class="event-card-rivet event-card-rivet-tr"></div>
+                        <div class="event-card-rivet event-card-rivet-bl"></div>
+                        <div class="event-card-rivet event-card-rivet-br"></div>
+                    </div>
+                </div>
+
+                <!-- Bidding War -->
+                <div class="event-card" onclick="openModal('biddingModal')" id="event-bidding">
+                    <div class="event-card-inner">
+                        <div class="event-image-wrapper">
+                            <img src="images/bidding_war.png" alt="Bidding War - IPL Auction" class="event-image" loading="lazy">
+                            <div class="event-image-overlay">
+                                <span class="event-click-hint">🔍 Click to View Details</span>
+                            </div>
+                        </div>
+                        <div class="event-card-content">
+                            <h3 class="event-name">BIDDING WAR</h3>
+                            <p class="event-tagline">IPL Auction Challenge</p>
+                        </div>
+                        <div class="event-card-rivet event-card-rivet-tl"></div>
+                        <div class="event-card-rivet event-card-rivet-tr"></div>
+                        <div class="event-card-rivet event-card-rivet-bl"></div>
+                        <div class="event-card-rivet event-card-rivet-br"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORGANIZING COMMITTEE SECTION -->
+    <section class="section committee-section" id="committee">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-bolt section-bolt-left">👑</div>
+                <h2 class="section-title">THE SMALL COUNCIL</h2>
+                <div class="section-bolt section-bolt-right">👑</div>
+            </div>
+            <p class="section-subtitle">"The ones who command the realm."</p>
+            <div class="committee-grid">
+                <div class="committee-card convener">
+                    <div class="committee-avatar">🎓</div>
+                    <h3>Dr.P.Udhaya Kumar</h3>
+                    <p class="committee-role">HOD - Mechanical Engineering</p>
+                </div>
+                <div class="committee-card convener">
+                    <div class="committee-avatar">🎓</div>
+                    <h3>Dr.A.V.Ram Prasad</h3>
+                    <p class="committee-role">Convener</p>
+                </div>
+                <div class="committee-card">
+                    <div class="committee-avatar">👨‍🏫</div>
+                    <h3>Dr.D.Muthu Krishnan</h3>
+                    <p class="committee-role">Staff Coordinator</p>
+                </div>
+                <div class="committee-card">
+                    <div class="committee-avatar">👨‍🏫</div>
+                    <h3>Mr.M.Mohan Raj</h3>
+                    <p class="committee-role">Staff Coordinator</p>
+                </div>
+                <div class="committee-card">
+                    <div class="committee-avatar">👩‍🏫</div>
+                    <h3>Mrs.B.Devi</h3>
+                    <p class="committee-role">Staff Coordinator</p>
+                </div>
+            </div>
+
+            <!-- STUDENT COORDINATORS -->
+            <div class="section-header" style="margin-top: 60px;">
+                <h2 class="section-title sub-title">STUDENT COORDINATORS</h2>
+            </div>
+            <div class="committee-grid student-grid">
+                <div class="committee-card student">
+                    <div class="committee-avatar">🛠️</div>
+                    <h3>Mohamed Dulkarnain.J</h3>
+                    <p class="committee-role">III Year</p>
+                </div>
+                <div class="committee-card student">
+                    <div class="committee-avatar">🛠️</div>
+                    <h3>Venkatesh Kumar.A</h3>
+                    <p class="committee-role">III Year</p>
+                </div>
+                <div class="committee-card student">
+                    <div class="committee-avatar">🛠️</div>
+                    <h3>SURYA.K</h3>
+                    <p class="committee-role">II Year</p>
+                </div>
+                <div class="committee-card student">
+                    <div class="committee-avatar">🛠️</div>
+                    <h3>KARTHI KEYAN.M</h3>
+                    <p class="committee-role">II Year</p>
+                </div>
+            </div>
+
+            <!-- EDITING TEAM -->
+            <div class="section-header" style="margin-top: 60px;">
+                <h2 class="section-title sub-title">EDITING TEAM</h2>
+            </div>
+            <div class="committee-grid editing-grid">
+                <div class="committee-card editing">
+                    <div class="committee-avatar">🎬</div>
+                    <h3>DHANUSH.M</h3>
+                </div>
+                <div class="committee-card editing">
+                    <div class="committee-avatar">🎬</div>
+                    <h3>RANJITH KUMAR.K</h3>
+                </div>
+                <div class="committee-card editing">
+                    <div class="committee-avatar">🎬</div>
+                    <h3>VISHWA PRADEEP.J.K</h3>
+                </div>
+                <div class="committee-card editing">
+                    <div class="committee-avatar">🎬</div>
+                    <h3>BALACHANDRAN.B</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFERINGS SECTION -->
+    <section class="section offerings-section" id="offerings">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-bolt section-bolt-left">🏆</div>
+                <h2 class="section-title">EXPLORE OUR AWAITED OFFERINGS</h2>
+                <div class="section-bolt section-bolt-right">🏆</div>
+            </div>
+            <p class="section-subtitle">"The spoils of war await the victorious."</p>
+            <div class="offerings-timeline">
+                <div class="offerings-line"></div>
+                <div class="offering-card" data-offering="1">
+                    <div class="offering-dot"></div>
+                    <div class="offering-content">
+                        <div class="offering-icon">🛡️</div>
+                        <h3>Certificates & Shields</h3>
+                        <p>Earn your mark of honor — certificates and shields for all warriors who enter the arena.</p>
+                    </div>
+                </div>
+                <div class="offering-card" data-offering="2">
+                    <div class="offering-dot"></div>
+                    <div class="offering-content">
+                        <div class="offering-icon">💰</div>
+                        <h3>Cash Prize</h3>
+                        <p>Gold awaits the champions. Conquer the events and claim your treasure.</p>
+                    </div>
+                </div>
+                <div class="offering-card" data-offering="3">
+                    <div class="offering-dot"></div>
+                    <div class="offering-content">
+                        <div class="offering-icon">🍖</div>
+                        <h3>Complimentary Lunch & Refreshments</h3>
+                        <p>A grand feast fit for kings and queens — all participants shall dine well.</p>
+                    </div>
+                </div>
+                <div class="offering-card" data-offering="4">
+                    <div class="offering-dot"></div>
+                    <div class="offering-content">
+                        <div class="offering-icon">📜</div>
+                        <h3>Stationery Kit</h3>
+                        <p>Arm yourself with tools of the scholar — a stationery kit for every participant.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-bolt section-bolt-left">🐦</div>
+                <h2 class="section-title">SEND A RAVEN</h2>
+                <div class="section-bolt section-bolt-right">🐦</div>
+            </div>
+            <p class="section-subtitle">"Dark wings, dark words — but we promise only good news."</p>
+            <div class="contact-content">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email Us</h3>
+                    <a href="mailto:impelz2k26@gmail.com" class="contact-link">impelz2k26@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🗡</div>
+                    <h3>Battle Date</h3>
+                    <p class="contact-info">01 April 2026</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🏰</div>
+                    <h3>The Stronghold</h3>
+                    <p class="contact-info">Department of Mechanical Engineering</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-gears">
+                <span class="footer-gear">⚔</span>
+                <span class="footer-gear">🛡</span>
+                <span class="footer-gear">⚔</span>
+            </div>
+            <p class="footer-brand">IMPELZ 2K26</p>
+            <p class="footer-text">Department of Mechanical Engineering</p>
+            <p class="footer-tagline">"Valar Morghulis — All men must engineer."</p>
+            <p class="footer-copy">&copy; 2026 IMPELZ. Forged in Iron. Built with Honor.</p>
+        </div>
+    </footer>
+
+    <!-- ====== MODALS ====== -->
+
+    <!-- PAPER PRESENTATION MODAL -->
+    <div class="modal-overlay" id="paperModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal('paperModal')">&times;</button>
+            <div class="modal-header">
+                <img src="images/paper_presentation.png" alt="Paper Presentation" class="modal-hero-img">
+                <div class="modal-header-content">
+                    <h2 class="modal-title">DRACARYS</h2>
+                    <p class="modal-subtitle">Paper Presentation Event</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">Unleash your ideas and take the stage! The Paper Presentation event invites participants to showcase innovative, insightful, and impactful topics from any domain of interest. Whether it's emerging technology, engineering concepts, sustainability, or creative research—all unique and thought-provoking topics are welcome.</p>
+                <p class="modal-desc">This is your platform to communicate ideas, demonstrate knowledge, and make an impression with clarity and confidence.</p>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">📌 Rules & Guidelines</h3>
+                    <ul class="modal-rules">
+                        <li>Send Your Abstract to the mentioned mail id on or before <strong>30.03.2026</strong></li>
+                        <li>📧 <a href="mailto:impelz2k26@gmail.com">impelz2k26@gmail.com</a></li>
+                        <li>👥 <strong>Team Size:</strong> Maximum of 3 members per team</li>
+                        <li>⏱️ <strong>Time Limit:</strong> 5 minutes per presentation</li>
+                        <li>📊 <strong>Presentation Format:</strong> PPT (PowerPoint)</li>
+                        <li>🎯 <strong>Topic:</strong> Open category – should be relevant, innovative, and meaningful</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">📞 Coordinators & Helping Desk</h3>
+                    <div class="modal-contacts">
+                        <div class="modal-contact">
+                            <span class="contact-name">N.Yogeshwaran</span>
+                            <span class="contact-role">Coordinator</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">Arumuga Prakash</span>
+                            <span class="contact-role">Coordinator</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">N.Yogeshwaran</span>
+                            <span class="contact-role">Helping Desk</span>
+                            <span class="contact-phone">📱 +91 90034 01466</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CAD MODELING MODAL -->
+    <div class="modal-overlay" id="cadModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal('cadModal')">&times;</button>
+            <div class="modal-header">
+                <img src="images/cad_modeling.png" alt="CAD Modeling" class="modal-hero-img">
+                <div class="modal-header-content">
+                    <h2 class="modal-title">VALYRIAN DRAFT</h2>
+                    <p class="modal-subtitle">CAD Modeling Event</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">Forge Your Design. Unleash the Dragon. Prove your mastery in CAD modeling by creating precision 2D drawings and 3D models under competitive conditions.</p>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">📌 Rules & Regulations</h3>
+                    <ul class="modal-rules">
+                        <li>Participants are allowed to use <strong>any CAD software</strong> of their choice</li>
+                        <li>Participants are permitted to bring their <strong>own laptops</strong> for the event</li>
+                        <li>⏱️ Total duration of the event is <strong>1.5 hours</strong></li>
+                        <li>The competition follows a <strong>continuous stage format:</strong></li>
+                    </ul>
+                    <div class="modal-stages">
+                        <div class="stage-card">
+                            <span class="stage-num">Stage 1</span>
+                            <p>Create a fully defined 2D drawing based on the problem provided by the organizing committee</p>
+                        </div>
+                        <div class="stage-card">
+                            <span class="stage-num">Stage 2</span>
+                            <p>Immediately proceed without any time gap to develop the 3D part model and assembly as instructed</p>
+                        </div>
+                    </div>
+                    <ul class="modal-rules">
+                        <li>⚠️ Any form of <strong>malpractice or external assistance</strong> is strictly prohibited</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">📞 Coordinators & Helping Desk</h3>
+                    <div class="modal-contacts">
+                        <div class="modal-contact">
+                            <span class="contact-name">Nirmal Kumar.A</span>
+                            <span class="contact-role">Coordinator</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">RAGHUL.R</span>
+                            <span class="contact-role">Coordinator</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">Nirmal Kumar.A</span>
+                            <span class="contact-role">Helping Desk</span>
+                            <span class="contact-phone">📱 +91 88077 35279</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">RAGHUL.R</span>
+                            <span class="contact-role">Helping Desk</span>
+                            <span class="contact-phone">📱 +91 96296 51527</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TECHNICAL QUIZ MODAL -->
+    <div class="modal-overlay" id="quizModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal('quizModal')">&times;</button>
+            <div class="modal-header">
+                <img src="images/technical_quiz.png" alt="Technical Quiz" class="modal-hero-img">
+                <div class="modal-header-content">
+                    <h2 class="modal-title">SECRETS OF THE CITADEL</h2>
+                    <p class="modal-subtitle">Technical Quiz</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">The Technical Quiz Contest is designed to test the participants' knowledge, analytical thinking, and problem-solving skills. This event aims to create a competitive platform where students can showcase their understanding of core concepts, current technologies, and general engineering awareness.</p>
+                <div class="modal-badge">🌐 Open to All Departments</div>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">📞 Coordinators & Helping Desk</h3>
+                    <div class="modal-contacts">
+                        <div class="modal-contact">
+                            <span class="contact-name">Parthiban.S</span>
+                            <span class="contact-role">Coordinator</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">Ari Vignesh.V</span>
+                            <span class="contact-role">Coordinator</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">Surya.K</span>
+                            <span class="contact-role">Helping Desk</span>
+                            <span class="contact-phone">📱 +91 81909 59065</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">Kailash</span>
+                            <span class="contact-role">Helping Desk</span>
+                            <span class="contact-phone">📱 +91 72005 63387</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SELL THE SEVEN KINGDOMS MODAL -->
+    <div class="modal-overlay" id="sellModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal('sellModal')">&times;</button>
+            <div class="modal-header">
+                <img src="images/sell_seven_kingdoms.png" alt="Sell the Seven Kingdoms" class="modal-hero-img">
+                <div class="modal-header-content">
+                    <h2 class="modal-title">SELL THE SEVEN KINGDOMS</h2>
+                    <p class="modal-subtitle">The Ultimate Sales Pitch Challenge</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">If you can sell a disaster as a masterpiece, this stage is yours. Engineering logic is optional; confidence is mandatory. Your mission? Convince our panel of "Investors" that your product is the next global breakthrough.</p>
+                
+                <div class="modal-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-label">0%</span>
+                        <span class="highlight-text">Technical Knowledge required</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-label">100%</span>
+                        <span class="highlight-text">Humor & Confidence</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-label">🏆</span>
+                        <span class="highlight-text">Epic prizes for the most hilarious pitches!</span>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">📌 Rules</h3>
+                    <ul class="modal-rules">
+                        <li>👥 <strong>Team Size:</strong> 1 to 3 members</li>
+                        <li>📵 <strong>No Phones Allowed:</strong> Use of mobile phones or the internet during prep leads to instant disqualification</li>
+                        <li>⏱️ <strong>3-Minute Pitch:</strong> You have exactly 3 minutes to sell your product. When the buzzer sounds, you stop!</li>
+                        <li>❓ <strong>2-Minute Q&A:</strong> After your pitch, you must survive 2 minutes of intense questioning from the judges</li>
+                        <li>⚖️ <strong>Final Decision:</strong> The judges' word is final. No arguments, no appeals—just the "market" reality</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">📞 Coordinators & Helping Desk</h3>
+                    <div class="modal-contacts">
+                        <div class="modal-contact">
+                            <span class="contact-name">Jerald Reeves.A</span>
+                            <span class="contact-role">Coordinator</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">Saravana Kumar.M</span>
+                            <span class="contact-role">Coordinator</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">T.R.Ashwagesh</span>
+                            <span class="contact-role">Helping Desk</span>
+                            <span class="contact-phone">📱 +91 93619 81396</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">Saravana Kumar.M</span>
+                            <span class="contact-role">Helping Desk</span>
+                            <span class="contact-phone">📱 +91 86673 13943</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SONG OF ICE AND FIRE MODAL -->
+    <div class="modal-overlay" id="songModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal('songModal')">&times;</button>
+            <div class="modal-header">
+                <img src="images/song_ice_fire.png" alt="The Song of Ice and Fire" class="modal-hero-img">
+                <div class="modal-header-content">
+                    <h2 class="modal-title">THE SONG OF ICE AND FIRE</h2>
+                    <p class="modal-subtitle">Team Entertainment Challenge</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">A fun-filled and challenging team-based game designed to bring together fun, entertainment and teamwork. The event challenges participants through music, memory, movies and coordination based tasks. The game is structured in two levels, each level consists of specific rounds and participants will be eliminated at every round to keep the excitement high.</p>
+                <div class="modal-badge">🏆 Winner, 1st Runner Up & 2nd Runner Up Teams will Receive Prizes!</div>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">📌 Rules</h3>
+                    <ul class="modal-rules">
+                        <li>👥 Each team should contain <strong>2–4 participants</strong></li>
+                        <li>🚫 Elimination will be based on their scores</li>
+                        <li>⏱️ Participants must answer to the respective questions within the given time limit, otherwise the chance will be given to the next team</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">📞 Coordinators & Helping Desk</h3>
+                    <div class="modal-contacts">
+                        <div class="modal-contact">
+                            <span class="contact-name">Rishiga.M</span>
+                            <span class="contact-role">Coordinator</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">Venkatesh Kumar.A</span>
+                            <span class="contact-role">Coordinator</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">Venkatesh Kumar.A</span>
+                            <span class="contact-role">Helping Desk</span>
+                            <span class="contact-phone">📱 +91 78717 19669</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">Dinesh Kumar.M</span>
+                            <span class="contact-role">Helping Desk</span>
+                            <span class="contact-phone">📱 +91 63794 54752</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BIDDING WAR MODAL -->
+    <div class="modal-overlay" id="biddingModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal('biddingModal')">&times;</button>
+            <div class="modal-header">
+                <img src="images/bidding_war.png" alt="Bidding War" class="modal-hero-img">
+                <div class="modal-header-content">
+                    <h2 class="modal-title">BIDDING WAR</h2>
+                    <p class="modal-subtitle">IPL Auction Challenge 2026</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">BIDDING WAR is where your IPL passion pays off! It is the ultimate playground for IPL fanatics! Survive the heat and you'll earn your seat at the Live Mega Auction, where the real pressure begins as you battle rival owners to build a dream squad under a tight budget.</p>
+                <p class="modal-desc">It's not just about cricket; it's about nerves of steel and outsmarting the room. The stage is set, the purse is ready — see you at the auction table!</p>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">📌 Rules</h3>
+                    <ul class="modal-rules">
+                        <li>👥 <strong>Team Size:</strong> 2 to 5 members</li>
+                        <li>💰 Use your virtual purse to scout, bid, and secure a perfect playing XI that can dominate the league</li>
+                        <li>🏆 <strong>Winning Criteria:</strong> Teams will be evaluated based on official player ratings; the squad with the highest aggregate performance score takes home the trophy!</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">📞 Coordinators & Helping Desk</h3>
+                    <div class="modal-contacts">
+                        <div class="modal-contact">
+                            <span class="contact-name">M.Dhanush</span>
+                            <span class="contact-role">Coordinator</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">M.Monisha</span>
+                            <span class="contact-role">Coordinator</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">B.Balachandran</span>
+                            <span class="contact-role">Helping Desk</span>
+                            <span class="contact-phone">📱 +91 98438 77845</span>
+                        </div>
+                        <div class="modal-contact">
+                            <span class="contact-name">A.Kumar</span>
+                            <span class="contact-role">Helping Desk</span>
+                            <span class="contact-phone">📱 +91 84388 40823</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
